@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Tab Queuer",
+    "version": "1.0",
+    "description": "Gathers open YouTube video tabs into a single/multiple queued playlist tab.",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Queue YouTube Tabs"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon64.png",
+        "128": "icons/icon128.png",
+        "512": "icons/icon512.png"
+    }
+}

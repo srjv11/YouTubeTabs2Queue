@@ -35,8 +35,8 @@ function collectYouTubeTabs() {
             chrome.tabs.create({ url: playlistUrl });
         }
   
-        // --- Optional: Close original tabs ---
-        // Uncomment if you want to close originals after creating *all* playlist tabs
+        // --- Close original tabs ---
+        // Close originals after creating *all* playlist tabs
 
         chrome.tabs.remove(tabIdsToRemove, () => {
           if (chrome.runtime.lastError) {
@@ -45,7 +45,6 @@ function collectYouTubeTabs() {
             console.log("Successfully removed original YouTube tabs.");
           }
         });
-        // --- End Optional ---
   
       } else {
         console.log("Could not extract any video IDs from the found tabs.");
